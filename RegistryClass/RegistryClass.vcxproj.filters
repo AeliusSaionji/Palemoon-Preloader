@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Documents">
+      <UniqueIdentifier>{1456d945-f838-4d3c-b8ef-a86a82631a5e}</UniqueIdentifier>
+      <Extensions>txt,html,htm,doc,pdf</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Building.txt">
+      <Filter>Documents</Filter>
+    </Text>
+    <Text Include="ChangeLog.txt">
+      <Filter>Documents</Filter>
+    </Text>
+    <Text Include="License.txt">
+      <Filter>Documents</Filter>
+    </Text>
+    <Text Include="NextBuildNumber.txt">
+      <Filter>Documents</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="manual.pdf">
+      <Filter>Documents</Filter>
+    </CustomBuild>
+    <CustomBuild Include="reference.pdf">
+      <Filter>Documents</Filter>
+    </CustomBuild>
+    <CustomBuild Include="RegistryClass.h" />
+  </ItemGroup>
+</Project>

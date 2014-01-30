@@ -1,0 +1,41 @@
+﻿Build started 14/01/26 23:38:49.
+     1>Project "D:\Downloads\RegistryClass\regclassu\regclassu.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\ /Zi /nologo /W3 /WX- /O2 /Oy- /D WIN32 /D NDEBUG /D _WINDOWS /D _MBCS /D _AFXEXT /D UNICODE /D _VC80_UPGRADE=0x0600 /D _WINDLL /D _UNICODE /D UNICODE /D _AFXDLL /GF /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp".\Release\regclassu.pch" /Fo".\Release\\" /Fd".\Release\vc120.pdb" /FR".\Release\\" /Gd /TP /analyze- /errorReport:prompt ..\StdAfx.cpp
+         StdAfx.cpp
+     1>C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\atlmfc\include\afx.h(38): warning C4996: 'MBCS_Support_Deprecated_In_MFC': MBCS support in MFC is deprecated and may be removed in a future version of MFC.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\atlmfc\include\afx.h(33) : see declaration of 'MBCS_Support_Deprecated_In_MFC'
+         _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\ /Zi /nologo /W3 /WX- /O2 /Oy- /D WIN32 /D NDEBUG /D _WINDOWS /D _MBCS /D _AFXEXT /D UNICODE /D _VC80_UPGRADE=0x0600 /D _WINDLL /D _UNICODE /D UNICODE /D _AFXDLL /GF /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp".\Release\regclassu.pch" /Fo".\Release\\" /Fd".\Release\vc120.pdb" /FR".\Release\\" /Gd /TP /analyze- /errorReport:prompt ..\Helpers.cpp ..\Registry.cpp ..\RegistryKey.cpp ..\RegistryValue.cpp ..\regclass.cpp
+         Helpers.cpp
+         Registry.cpp
+         RegistryKey.cpp
+         RegistryValue.cpp
+         regclass.cpp
+         Generating Code...
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D NDEBUG /D UNICODE /D _UNICODE /D _VC80_UPGRADE=0x0600 /D _UNICODE /D UNICODE /D _AFXDLL /l"0x0409" /I\Downloads\RegistryClass /nologo /fo".\Release\regclass.res" ..\regclass.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Release\regclassu.dll" /INCREMENTAL:NO /NOLOGO /DEF:".\regclassu.def" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /PDB:".\Release\regclassu.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\Release\regclassu.lib" /MACHINE:X86 /SAFESEH /DLL .\Release\regclass.res
+         .\Release\Helpers.obj
+         .\Release\regclass.obj
+         .\Release\Registry.obj
+         .\Release\RegistryKey.obj
+         .\Release\RegistryValue.obj
+         .\Release\StdAfx.obj
+     1>.\regclassu.def(25): warning LNK4017: DESCRIPTION statement not supported for the target platform; ignored
+            Creating library .\Release\regclassu.lib and object .\Release\regclassu.exp
+         regclassu.vcxproj -> D:\Downloads\RegistryClass\regclassu\.\Release\regclassu.dll
+       BscMake:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\bscmake.exe /nologo /o".\Release\regclassu.bsc" .\Release\Helpers.sbr .\Release\regclass.sbr .\Release\Registry.sbr .\Release\RegistryKey.sbr .\Release\RegistryValue.sbr .\Release\StdAfx.sbr
+       PostBuildEvent:
+         copy .\Release\regclassu.dll ..\.\Release\
+         copy .\Release\regclassu.lib ..\.\Release\
+         :VCEnd
+                 1 file(s) copied.
+                 1 file(s) copied.
+     1>Done Building Project "D:\Downloads\RegistryClass\regclassu\regclassu.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:04.06

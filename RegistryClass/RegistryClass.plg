@@ -1,0 +1,114 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: regclass - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Release/regclass.res" /i "\C C++\RegistryClass" /d "NDEBUG" /d "_AFXDLL" "E:\C C++\RegistryClass\regclass.rc"" 
+Creating temporary file "C:\DOCUME~1\Matthew\LOCALS~1\Temp\RSP18.tmp" with contents
+[
+/nologo /subsystem:windows /dll /incremental:no /pdb:"Release/regclass.pdb" /machine:I386 /def:".\regclass.def" /out:"Release/regclass.dll" /implib:"Release/regclass.lib" 
+".\Release\Helpers.obj"
+".\Release\regclass.obj"
+".\Release\Registry.obj"
+".\Release\RegistryKey.obj"
+".\Release\RegistryValue.obj"
+".\Release\StdAfx.obj"
+".\Release\regclass.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\Matthew\LOCALS~1\Temp\RSP18.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Linking...
+   Creating library Release/regclass.lib and object Release/regclass.exp
+Creating temporary file "C:\DOCUME~1\Matthew\LOCALS~1\Temp\RSP1C.bat" with contents
+[
+@echo off
+copy .\Release\regclass.dll ..\.\Release
+copy .\Release\regclass.lib ..\.\Release
+]
+Creating command line "C:\DOCUME~1\Matthew\LOCALS~1\Temp\RSP1C.bat"
+
+        1 file(s) copied.
+        1 file(s) copied.
+<h3>
+--------------------Configuration: regclassu - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Release/regclass.res" /i "\C C++\RegistryClass" /d "NDEBUG" /d "_AFXDLL" /d "UNICODE" /d "_UNICODE" "E:\C C++\RegistryClass\regclass.rc"" 
+Creating temporary file "C:\DOCUME~1\Matthew\LOCALS~1\Temp\RSP1D.tmp" with contents
+[
+/nologo /subsystem:windows /dll /incremental:no /pdb:"Release/regclassu.pdb" /machine:I386 /def:".\regclassu.def" /out:"Release/regclassu.dll" /implib:"Release/regclassu.lib" 
+".\Release\Helpers.obj"
+".\Release\regclass.obj"
+".\Release\Registry.obj"
+".\Release\RegistryKey.obj"
+".\Release\RegistryValue.obj"
+".\Release\StdAfx.obj"
+".\Release\regclass.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\Matthew\LOCALS~1\Temp\RSP1D.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Linking...
+   Creating library Release/regclassu.lib and object Release/regclassu.exp
+Creating temporary file "C:\DOCUME~1\Matthew\LOCALS~1\Temp\RSP21.bat" with contents
+[
+@echo off
+copy .\Release\regclassu.dll ..\.\Release
+copy .\Release\regclassu.lib ..\.\Release
+]
+Creating command line "C:\DOCUME~1\Matthew\LOCALS~1\Temp\RSP21.bat"
+
+        1 file(s) copied.
+        1 file(s) copied.
+<h3>
+--------------------Configuration: RegistryClass - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Matthew\LOCALS~1\Temp\RSP22.bat" with contents
+[
+@echo off
+copy    Registry*.h    .\Release\
+]
+Creating command line "C:\DOCUME~1\Matthew\LOCALS~1\Temp\RSP22.bat"
+<h3>Output Window</h3>
+Performing Custom Build Step on .\RegistryClass.h
+Registry.h
+RegistryClass.h
+RegistryKey.h
+RegistryValue.h
+        4 file(s) copied.
+Creating temporary file "C:\DOCUME~1\Matthew\LOCALS~1\Temp\RSP23.bat" with contents
+[
+@echo off
+CScript autover.js -n NextBuildNumber.txt -o autover.h
+copy *.pdf .\Release
+copy ChangeLog.txt .\Release
+copy License.txt .\Release
+]
+Creating command line "C:\DOCUME~1\Matthew\LOCALS~1\Temp\RSP23.bat"
+
+Microsoft (R) Windows Script Host Version 5.6
+Copyright (C) Microsoft Corporation 1996-2001. All rights reserved.
+
+AutoVer Script version 1.0 revision 10
+===============================================================================
+Input File: NextBuildNumber.txt    Output File: autover.h
+Currnet Build: 1049
+New Build:     1050
+manual.pdf
+reference.pdf
+        2 file(s) copied.
+        1 file(s) copied.
+        1 file(s) copied.
+
+
+
+<h3>Results</h3>
+RegistryClass - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

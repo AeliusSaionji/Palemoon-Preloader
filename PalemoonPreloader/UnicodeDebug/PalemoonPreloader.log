@@ -1,0 +1,58 @@
+﻿Build started 14/01/26 20:39:50.
+     1>Project "D:\Downloads\PalemoonPreloader_src\PalemoonPreloader\PalemoonPreloader.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\RegistryClass\Debug /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _MBCS /D _VC80_UPGRADE=0x0600 /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp".\UnicodeDebug\PalemoonPreloader.pch" /Fo".\UnicodeDebug\\" /Fd".\UnicodeDebug\vc120.pdb" /FR".\UnicodeDebug\\" /Gd /TP /analyze- /errorReport:prompt StdAfx.cpp
+         StdAfx.cpp
+     1>c:\program files (x86)\microsoft visual studio 12.0\vc\atlmfc\include\afx.h(38): warning C4996: 'MBCS_Support_Deprecated_In_MFC': MBCS support in MFC is deprecated and may be removed in a future version of MFC.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\atlmfc\include\afx.h(33) : see declaration of 'MBCS_Support_Deprecated_In_MFC'
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\RegistryClass\Debug /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _MBCS /D _VC80_UPGRADE=0x0600 /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp".\UnicodeDebug\PalemoonPreloader.pch" /Fo".\UnicodeDebug\\" /Fd".\UnicodeDebug\vc120.pdb" /FR".\UnicodeDebug\\" /Gd /TP /analyze- /errorReport:prompt AboutDlg.cpp DefaultDlg.cpp FileVersionInfo.cpp PalemoonPreloader.cpp Helpers.cpp OptionsDlg.cpp processes.cpp
+         processes.cpp
+     1>d:\downloads\palemoonpreloader_src\palemoonpreloader\processes.cpp(96): warning C4996: 'GetVersionExW': was declared deprecated
+                 c:\program files (x86)\windows kits\8.1\include\um\sysinfoapi.h(442) : see declaration of 'GetVersionExW'
+         OptionsDlg.cpp
+         Helpers.cpp
+     1>d:\downloads\palemoonpreloader_src\palemoonpreloader\helpers.cpp(162): warning C4996: 'swscanf': This function or variable may be unsafe. Consider using swscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\wchar.h(823) : see declaration of 'swscanf'
+         PalemoonPreloader.cpp
+     1>d:\downloads\palemoonpreloader_src\palemoonpreloader\palemoonpreloader.cpp(70): warning C4996: 'CWinApp::Enable3dControls': CWinApp::Enable3dControls is no longer needed. You should remove this call.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\atlmfc\include\afxwin.h(5178) : see declaration of 'CWinApp::Enable3dControls'
+         FileVersionInfo.cpp
+         DefaultDlg.cpp
+         AboutDlg.cpp
+         Generating Code...
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D _DEBUG /D _VC80_UPGRADE=0x0600 /D _UNICODE /D UNICODE /D _AFXDLL /l"0x0409" /nologo /fo".\UnicodeDebug\PalemoonPreloader.res" PalemoonPreloader.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\UnicodeDebug\PalemoonPreloader.exe" /INCREMENTAL /NOLOGO /LIBPATH:..\RegistryClass\Debug version.lib strsafe.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:".\UnicodeDebug\PalemoonPreloader.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:".\UnicodeDebug\PalemoonPreloader.lib" /MACHINE:X86 /SAFESEH .\UnicodeDebug\PalemoonPreloader.res
+         .\UnicodeDebug\AboutDlg.obj
+         .\UnicodeDebug\DefaultDlg.obj
+         .\UnicodeDebug\FileVersionInfo.obj
+         .\UnicodeDebug\PalemoonPreloader.obj
+         .\UnicodeDebug\Helpers.obj
+         .\UnicodeDebug\OptionsDlg.obj
+         .\UnicodeDebug\processes.obj
+         .\UnicodeDebug\StdAfx.obj
+         ..\..\RegistryClass\Release\regclassu.lib
+     1>AboutDlg.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+            Creating library .\UnicodeDebug\PalemoonPreloader.lib and object .\UnicodeDebug\PalemoonPreloader.exp
+         PalemoonPreloader.vcxproj -> D:\Downloads\PalemoonPreloader_src\PalemoonPreloader\.\UnicodeDebug\PalemoonPreloader.exe
+       BscMake:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\bscmake.exe /nologo /o".\UnicodeDebug\PalemoonPreloader.bsc" .\UnicodeDebug\AboutDlg.sbr .\UnicodeDebug\DefaultDlg.sbr .\UnicodeDebug\FileVersionInfo.sbr .\UnicodeDebug\PalemoonPreloader.sbr .\UnicodeDebug\Helpers.sbr .\UnicodeDebug\OptionsDlg.sbr .\UnicodeDebug\processes.sbr .\UnicodeDebug\StdAfx.sbr
+       PostBuildEvent:
+         copy ..\RegistryClass\Debug\regclassu.dll .\UnicodeDebug\
+         CScript autover.js -n NextBuildNumber.txt -o autover.h
+         :VCEnd
+         The system cannot find the path specified.
+         Microsoft (R) Windows Script Host Version 5.8
+         Copyright (C) Microsoft Corporation. All rights reserved.
+         
+         AutoVer Script version 1.0 revision 10
+         ===============================================================================
+         Input File: NextBuildNumber.txt    Output File: autover.h
+         Currnet Build: 377
+         New Build:     378
+     1>Done Building Project "D:\Downloads\PalemoonPreloader_src\PalemoonPreloader\PalemoonPreloader.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:04.26

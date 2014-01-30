@@ -1,0 +1,35 @@
+﻿Build started 14/01/26 23:39:48.
+     1>Project "D:\Downloads\PalemoonPreloader_src\PalemoonPreloader\PalemoonPreloader.vcxproj" on node 2 (Build target(s)).
+     1>ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D NDEBUG /D _VC80_UPGRADE=0x0600 /D _UNICODE /D UNICODE /D _AFXDLL /l"0x0409" /nologo /fo".\Release\PalemoonPreloader.res" PalemoonPreloader.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Release\PalemoonPreloader.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:..\RegistryClass\Release version.lib strsafe.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /PDB:".\Release\PalemoonPreloader.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:".\Release\PalemoonPreloader.lib" /MACHINE:X86 /SAFESEH .\Release\PalemoonPreloader.res
+         .\Release\AboutDlg.obj
+         .\Release\DefaultDlg.obj
+         .\Release\FileVersionInfo.obj
+         .\Release\PalemoonPreloader.obj
+         .\Release\Helpers.obj
+         .\Release\OptionsDlg.obj
+         .\Release\processes.obj
+         .\Release\StdAfx.obj
+         ..\..\RegistryClass\Release\regclassu.lib
+            Creating library .\Release\PalemoonPreloader.lib and object .\Release\PalemoonPreloader.exp
+         PalemoonPreloader.vcxproj -> D:\Downloads\PalemoonPreloader_src\PalemoonPreloader\.\Release\PalemoonPreloader.exe
+       PostBuildEvent:
+         copy ..\RegistryClass\Release\regclass.dll .\Release\
+         CScript autover.js -n NextBuildNumber.txt -o autover.h
+         :VCEnd
+         The system cannot find the path specified.
+         Microsoft (R) Windows Script Host Version 5.8
+         Copyright (C) Microsoft Corporation. All rights reserved.
+         
+         AutoVer Script version 1.0 revision 10
+         ===============================================================================
+         Input File: NextBuildNumber.txt    Output File: autover.h
+         Currnet Build: 382
+         New Build:     383
+     1>Done Building Project "D:\Downloads\PalemoonPreloader_src\PalemoonPreloader\PalemoonPreloader.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.26

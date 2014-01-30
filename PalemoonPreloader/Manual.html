@@ -1,0 +1,88 @@
+<html>
+<head>
+	<title>Palemoon Preloader Manual</title>
+<style type="text/css">body {
+			margin: 0;
+			padding: 0 36pt;
+			color: WindowText;
+			background-color: Window;
+			font: normal normal normal 10pt/120% Arial, Helvetica, sans-serif;
+		}
+
+		h1, h2, p { padding: 0; }
+
+		h1 {
+			font-size: 14pt;
+			text-align: center;
+			margin: 24pt 0;
+		}
+
+		h2 {
+			font-size: 12pt;
+			border-bottom: 1px solid ThreedShadow;
+			margin: 12pt 0;
+		}
+
+		p {
+			text-align: justify;
+			margin: 6pt 0;
+		}
+
+		ul {
+			margin: 6pt 0;
+			padding: 0 0 0 36pt;
+		}
+
+		li {
+			margin: 0; padding: 0;
+		}
+
+		strong {
+			font-style: normal;
+			font-weight: bold;
+		}
+</style>
+palemoon
+</head>
+<body>
+<h1>Palemoon Preloader Manual</h1>
+<p>Copyright &copy;2004 6XGate Incorporated</p>
+<p>Palemoon Preloader is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.</p>
+<p>Palemoon Preloader is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.</p>
+<p>You should have received a copy of the GNU General Public License along with Palemoon Preloader; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA</p>
+<h2>Introduction</h2>
+<p>This is a little program for people who use  Palemoon on older machines. It is designed to pre-load Palemoon in the background so it will load faster when requested.</p>
+<h2>Requirements</h2>
+<ul>
+	<li> Palemoon 1.0 or better</li>
+	<li>4MB plus Enough memory to run Palemoon</li>
+	<li>Window 95 or NT 4.0 or better</li>
+</ul>
+<h2>Installation</h2>
+<p>Once you have downloaded the installation program, simply run this program and it will guide you through installing the Palemoon Preloader.  If you are running an older version, it is recommended that you unload it or you will have you restart your computer when the installation finishes.</p>
+<p>The first time the pre-loader runs, it may ask you for the directory that Palemoon is installed in if it was unable to automatically find Palemoon.  You may change this later if you wish.</p>
+<h2>Using the Preloader</h2>
+<p>To use the Palemoon Preloader, simply place a shortcut in the Windows StartUp folder, if one is not present.  To begin using if right away, simply use the shortcut in the Windows Start Menu under the Palemoon Preloader program group.</p>
+<p>When the Preloader is loaded, a Palemoon icon will appear in the system tray.  By right-clicking on the icon, you can bring up a menu of actions to control Palemoon and the Preloader.  By double-clicking on the icon, you can open a new Palemoon window with your currently set home page(s).</p>
+<p>The Palemoon Preloader will immediately load a portion of  Palemoon into memory to cut the startup time of Palemoon in half.  As you begin to use Palemoon the remaining portions will be loaded into memory.  When all of the Palemoon Windows are closed, Palemoon will remain in memory and the next startup will be instantaneous.</p>
+<p>If you use the &lsquo;File-&gt;Exit&rsquo; menu item in any Palemoon browser windows, Palemoon will be unloaded and all the memory it was using freed.  The Preloader will then reload Palemoon, making it available for later use.</p>
+<h2>Installing and Removing Themes and Extensions</h2>
+<p>Since the Palemoon Preloader will keep Palemoon loaded, even when no Palemoon windows are visible, installing or removing themes and extensions may not take affect as expected.  Since Palemoon must be restarted to remove or install a theme or extension, you must terminate Palemoon using either of the following methods:</p>
+<ul>
+	<li>Use the &lsquo;File-&gt;Exit&rsquo; menu item in any Palemoon windows.</li>
+	<li>Use the &ldquo;Reload Palemoon&rdquo; menu item in the Preloader's tray icon menu.</li>
+</ul>
+<p>Should you plan to work or/develop a theme or extension, the Preloader can easily get in the way be requiring the extra effort to terminate Palemoon.  To make sure that Palemoon always unloads when you close all Palemoon windows, you can deactivate the Preloader by using the &ldquo;Unload Palemoon&rdquo; menu item from tray icon menu.  You can make the Preloader resume its normal function by using the &ldquo;Reload Palemoon&rdquo; menu item in the tray icon menu.</p>
+<h2>Using the Preloader Menu</h2>
+<p>Right clicking on the Palemoon icon in the tray will present the following menu items:</p>
+<ul>
+	<li><strong>Open My Homepage</strong> - Opens your current home page in a new browser window</li>
+	<li><strong>Internet Options</strong> - Opens the preferences window to set Palemoon's options</li>
+	<li><strong>Preloader Options</strong> - Opens the dialog where you set the Palemoon path and other options the pre-loader needs</li>
+	<li><strong>Reload Palemoon</strong> - Unloads (if pre-loaded) and reloads Palemoon to clean Palemoon's memory cache, enable newly installed extensions, and use a newly applied theme.  This also reactivates the Preloader if it was deactivated.</li>
+	<li><strong>Unload Palemoon</strong> - Unloads Palemoon and deactivates the Preloader to free memory for other applications, use &ldquo;Reload Palemoon&rdquo; to reactivate the Preloader and load Palemoon into memory.  This options is disabled when the Preloader is inactive.</li>
+	<li><strong>About Palemoon Preloader</strong> - Displays the current version of the Palemoon Preloader installed</li>
+	<li><strong>Unload Palemoon Preloade</strong>r - Unloads the Palemoon Preloader and any instances of Palemoon loaded by the Preloader</li>
+</ul>
+</body>
+</html>

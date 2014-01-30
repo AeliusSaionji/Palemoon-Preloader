@@ -1,0 +1,131 @@
+Copyright (C)2004 6XGate Incorporated
+
+Firefox Preloader is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+
+Firefox Preloader is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with Firefox Preloader; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+_________________________________________________________________
+Change Log
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+1.0 build 105
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+• Initial release
+
+1.0 build 115
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+• Allowed changing of the polling interval via registry setting
+• Found other strings that needed to be portable between UNICODE and ANSI †
+• Removed some trash left over from the first ideas behind this program †
+• Change the pre-loading method from ShellExecuteEx to CreateProcess †
+• Added NT 4 (PSAPI) process watching code (since NT 4 doesn't include Toolhelp32)
+• 2000/XP/20003 will use the PSAPI process watching code instead of Toolhelp32 †
+
+1.0 build 120
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+• Included a new version of regclass.dll that works under non-IE4 systems
+• Code cleanup and released †
+• Plugged some memory leaks
+
+1.0 build 123
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+• Now pre-loaded Firefox in a way that will work for everyone now
+
+1.0 build 130
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+• Added a context menu with several helpful selections
+• Cleaned up the 4-bit icons ‡
+• Added a 4-bit 16x16 only icon for pre-XP systems tray ‡
+• Double-clicking the tray icon now opens the users homepage
+
+1.0 build 179
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+• Create script to auto increase build number (GNU GPL licensed) †
+• More source code cleanup and useless code removed †
+• Renamed class CFirefoxPreloderDlg to COptionsDlg †
+• Will now ask you to change the path to Firefox if starting it fails (since this is the most likely reason for failing)
+• Will now warn the user when a path to Firefox doesn't contain the executable
+• Now there is only one global ErrorMessage function for all classes †
+• Removed unused and IE4-specific MFC headers †
+
+1.0 build 240
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+• Changed the Options dialog resource id to IDD_OPTIONS †
+• Fixed a bug that would cause the options dialog to improperly validate the Firefox directory and not accept it
+• The Preloader can now find Firefox automatically via the registry.  It will disable any option to do so if the proper keys aren't present
+• Added tray menu entries to reload/unload Firefox for themes, extensions, freeing memory, and etc.
+• Set the target processor for the compiler to 386 to insure no problems for old systems
+• The uninstaller will now remove the Preloader's key in the registry when it is ran
+• Fixed a bug that would have caused Firefox not to change themes if the Preloader was unloaded before Firefox was unloaded via 'File->Exit'
+• Now the Preload terminates/unloads Firefox by posting the WM_QUIT message to its "FirefoxMessageWindow" windows.  This fixes the aforementioned bug.
+• Detects already running instances of the Preloader and does not run if it finds one.
+• Added the Readme and License documents to the binary distribution.
+• The installer now asks for and adds document icons to a Firefox Preloader program group in the start menu
+• More optimization
+• More code cleanup †
+
+1.0 build 250
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+• Fixed a bug that caused the Preloader not to remember the state AutoFindFirefox sometimes
+• Fixed a bug that prevented unprivileged users from using AutoFind
+• Included the new build of RegistryClasses.  This was included to fix the aforementioned bug.
+• Preloader settings are now Pre-User and not Local-Machine
+• Plugged more memory leaks
+
+1.0 build 279
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+• Fixed another bug that causes problems for unprivileged users
+• Fixed a bug where the Preloader couldn't find Firefox running on XP in some situations
+• Fixed a bug that would cause the "Reload Firefox" option to open multiple blank windows when selected
+• Created a common function for handling the options dialog and AutoFind †
+• Errors are not presented to the user more gracefully
+• The Preloader no longer uses process watching to determine if Firefox is loaded.  Instead it looks for the "FirefoxMessageWindow."  This fixes the aforementioned bug.
+• Improved the AutoFind Firefox feature so it will make sure that it has a valid path with a firefox.exe file in it
+• The Preloader now has the option to warn the user if an action will unload the current instance of Firefox.  This is adjustable in the options dialog.
+• Includes a new build of RegistryClass
+• Corrected some spelling errors ‡
+• Some minor optimizations
+
+1.0 build 333
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+• Fixed a bug that caused Firefox to get terminated on certain occasions when the Preloader ended due to an error
+• Fixed a few more places where the Preloader couldn't handle paths with the trailing '\'.
+• Fixed a bug that caused a few blank windows to appear randomly.
+• Added a new method to detect if Firefox is running. It is combined with the FindWindow method to provide redundancy.  It looks for the parent.lock file in the default Firefox profile.  This is fixes the aforementioned bug.
+• Moved messages from MessageBoxes into a string table.  This will make it possible to include more languages in, or translate, the Preloader. †
+• Corrected some spelling errors ‡
+• Final Feature Release.  This will be the last beta that I will release any major new features.  From here on, it's bug fixing time.  Minor features may by added if requested.
+
+1.0 build 349
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+• Fixed a bug that caused Firefox to be reloaded by the Preloader Options dialog after the user requested it unload
+• Fixed a bug in the PSAPI process watching that caused the Preloader not to detect Firefox if it was loaded before the Preloader.
+• Returned the PSAPI and Toolhelp32 process watching and is used with FindWindow and parent.lock for increased redundancy to tell when Firefox is running.
+• Moved a few missed messages to the string table †
+• Some minor optimizations
+• Improved most code comments †
+• More code cleanup †
+
+1.0 build 353 - RC1
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+• Fixed a bug that caused the Preloader to load the Internet Options and Homepage hidden when it had been deactivated by the "Unload Firefox" command
+• Improved compliancy with the Windows User Interface Guidelines
+• The installer now asks the user if they want the Preloader to be launched on Windows startup
+• The Preloader now greys and disables the Unload Firefox menu item when the Preloader has unloaded Firefox and is currently inactive
+• Corrected the Preloader program groups spelling of Firefox (did anyone notice it was misspelled)
+
+1.0 build 357 - RC2
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+• The Preloader now indicates its status (if it is keeping Firefox loaded or not) by graying out the tray icon when it is inactive.
+• Now the Preloader will not unload any running Firefox instance UNLESS the Preloader is active and holding Firefox in memory.  This will keep allow you to reactive or unload the Preloader without it unloading any Firefox instances that were start after deactivating Preloader.
+
+1.0 build 366 - Final
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+• The ReadMe.txt file has been divided into ReadMe.txt, Manual.html, and ChangeLog.txt for easier reading.
+• The Preloader now uses the WaitForSingleObject method to wait until Firefox terminates before it tries to reload it.  This is added to increase the number of methods that the preloader uses to check for Firefox's status.  This should completely fix the empty window bug.
+
+(†) Noticeable only from source
+(‡) Cosmetic change
+
+Adapted for Palemoon
+-Link Satonaka

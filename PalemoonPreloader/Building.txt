@@ -1,0 +1,64 @@
+Copyright (C)2004 6XGate Incorporated
+
+Palemoon Preloader is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+
+Palemoon Preloader is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with Palemoon Preloader; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+_______________________________________________________________________________
+Palemoon Preloader Build Instructions
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+
+Requirements
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+Visual C++ 6.0
+Windows 95 or better
+RegistryClass source
+64BM RAM
+5MB or free Hard Drive space
+Platform SDK supporting at least Windows XP development
+Microsoft Layer for Unicode on Windows 95/98/Me Systems for UNICODE support
+
+Recommended
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+Visual C++ Service Pack 6
+Windows 2000 or Better
+256MB RAM
+10MB or free Hard Drive space
+The latest Platform SDK
+
+Getting the Latest Source
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+Visit http://matt.sixxgate.com/forum/viewtopic.php?t=92 to find the latest source for PalemoonPreloader and the required RegistryClass source.
+
+Setup
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+Once you have downloaded the PalemoonPreloader_src.zip and RegistryClass_src.zip, create a folder to extract them into.  Now simply unzip the ZIP files into this folder preserving the paths.  Don't use any ZIP programs "Extract to {DirName}\{ArchiveName}" feature.
+
+The directory tree should be like this once you are done:
+
+Root
+ |
+ +-PalemoonPreloader
+ |  |
+ |  +-res
+ |  |
+ |  +-redist
+ |
+ +-RegistryClass
+    |
+    +-CE
+    |
+    +-...
+
+Compile
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+First you will need to load the RegistryClass Workspace in Visual C++, compile the Release and/or Debug settings.  Next load the PalemoonPreloader Workspace in Visual C++ and compile the Release and/or Debug settings.  The UnicodeDebug settings are only to test the project to make sure it will compile as a UNICODE application.  RegistryClass already compiles as both UNICODE and ANSI.
+
+If you wish to submit any change to me for this project, they must be able to compile under the UnicodeDebug settings.  I will not except anything that is specific to any version of Windows or unable to work in UNICODE unless the change provide a method for all versions of Windows.
+
+Release version are only compiled into ANSI so they may run under all version of Windows.
+
+InnoSetup Script
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+To compile the InnoSetup Script, just download the latest copy of InnoSetup compiler and load the script then compile.

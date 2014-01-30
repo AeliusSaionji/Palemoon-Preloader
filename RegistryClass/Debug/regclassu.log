@@ -1,0 +1,35 @@
+﻿Build started 14/01/26 21:52:51.
+     1>Project "D:\Downloads\RegistryClass\regclassu\regclassu.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\ /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _MBCS /D _AFXEXT /D UNICODE /D _VC80_UPGRADE=0x0600 /D _WINDLL /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp".\Debug\regclassu.pch" /Fo".\Debug\\" /Fd".\Debug\vc120.pdb" /FR".\Debug\\" /Gd /TP /analyze- /errorReport:prompt ..\RegistryValue.cpp
+         RegistryValue.cpp
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D _DEBUG /D UNICODE /D _UNICODE /D _VC80_UPGRADE=0x0600 /D _UNICODE /D UNICODE /D _AFXDLL /l"0x0409" /I\Downloads\RegistryClass /nologo /fo".\Debug\regclass.res" ..\regclass.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Debug\regclassu.dll" /INCREMENTAL /NOLOGO /DEF:".\regclassu.def" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:".\Debug\regclassu.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\Debug\regclassu.lib" /MACHINE:X86 /SAFESEH /DLL .\Debug\regclass.res
+         .\Debug\Helpers.obj
+         .\Debug\regclass.obj
+         .\Debug\Registry.obj
+         .\Debug\RegistryKey.obj
+         .\Debug\RegistryValue.obj
+         .\Debug\StdAfx.obj
+     1>Helpers.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+     1>.\regclassu.def(25): warning LNK4017: DESCRIPTION statement not supported for the target platform; ignored
+            Creating library .\Debug\regclassu.lib and object .\Debug\regclassu.exp
+         regclassu.vcxproj -> D:\Downloads\RegistryClass\regclassu\.\Debug\regclassu.dll
+       BscMake:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\bscmake.exe /nologo /o".\Debug\regclassu.bsc" .\Debug\Helpers.sbr .\Debug\regclass.sbr .\Debug\Registry.sbr .\Debug\RegistryKey.sbr .\Debug\RegistryValue.sbr .\Debug\StdAfx.sbr
+       PostBuildEvent:
+         copy .\Debug\*.* ..\.\Debug\
+         :VCEnd
+         .\Debug\Helpers.obj
+         .\Debug\Helpers.sbr
+         .\Debug\regclass.obj
+         .\Debug\regclass.res
+         .\Debug\regclass.sbr
+         .\Debug\regclassu.bsc
+         .\Debug\regclassu.dll
+         .\Debug\regclassu.exp
+         .\Debug\regclassu.ilk
+         .\Debug\regclassu.lib
+         .\Debug\regclassu.log

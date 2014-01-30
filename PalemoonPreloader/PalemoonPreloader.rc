@@ -1,0 +1,249 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\PalemoonPreloader.ico"
+IDR_PREXPTRAY           ICON                    "res\\PalemoonPreloader16.ico"
+IDR_MAINFRAME_OFF       ICON                    "res\\PalemoonPreloader-Off.ico"
+IDR_PREXPTRAY_OFF       ICON                    "res\\PalemoonPreloader16-Off.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG 0, 0, 185, 132
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Application"
+FONT 8, "MS SHell Dlg"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,82,7,20,20
+    CTEXT           "Application Name",IDC_APPNAME,7,34,171,8,SS_NOPREFIX
+    CTEXT           "Application\nDescription",IDC_DESCR,7,72,171,17,SS_NOPREFIX
+    CTEXT           "Copyright",IDC_COPYRIGHT,7,96,171,8,SS_NOPREFIX
+    CTEXT           "Version",IDC_VERLABEL,7,49,171,8,SS_NOPREFIX
+    CTEXT           "Version",IDC_VERSION,7,57,171,8,SS_NOPREFIX
+    DEFPUSHBUTTON   "Close",IDOK,66,111,54,14,BS_CENTER | BS_VCENTER | WS_GROUP
+END
+
+IDD_OPTIONS DIALOGEX 0, 0, 264, 94
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Palemoon Preloader Options"
+FONT 8, "MS SHell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "-",IDC_STATIC,7,7,250,42
+    CONTROL         "Automatically &find Palemoon",IDC_AUTO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,7,91,10,WS_EX_TRANSPARENT
+    LTEXT           "Palemoon &path:",IDC_STATIC_PATH,16,17,232,8
+    EDITTEXT        IDC_PATH,16,28,180,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Browse...",IDC_BROWSE,199,28,49,14
+    CONTROL         "&Warn me if my action will unload Palemoon",IDC_WARN,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,56,250,10
+    DEFPUSHBUTTON   "OK",IDOK,151,73,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,207,73,50,14
+END
+
+IDD_DEFAULT DIALOG 0, 0, 118, 28
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Palemoon Preloader"
+MENU IDR_MISC
+FONT 8, "MS SHell Dlg"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,61,7,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 178
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 125
+    END
+
+    IDD_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 257
+        VERTGUIDE, 16
+        VERTGUIDE, 196
+        VERTGUIDE, 199
+        VERTGUIDE, 201
+        VERTGUIDE, 207
+        VERTGUIDE, 248
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+        HORZGUIDE, 17
+        HORZGUIDE, 28
+        HORZGUIDE, 49
+        HORZGUIDE, 56
+        HORZGUIDE, 66
+        HORZGUIDE, 73
+    END
+
+    IDD_DEFAULT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 111
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 21
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MISC MENU
+BEGIN
+    POPUP "Context Menu"
+    BEGIN
+        MENUITEM "Open My &Homepage",           ID_CONTEXTMENU_OPENMYHOMEPAGE
+        MENUITEM "Internet &Options...",        ID_CONTEXTMENU_INTERNETOPTIONS
+        MENUITEM "&Preloader Options...",       ID_CONTEXTMENU_PRELOADEROPTIONS
+        MENUITEM SEPARATOR
+        MENUITEM "&Reload Palemoon",            ID_CONTEXTMENU_RELOADFIREFOX
+        MENUITEM "U&nload Palemoon",            ID_CONTEXTMENU_UNLOADFIREFOX
+        MENUITEM SEPARATOR
+        MENUITEM "&About Palemoon Preloader...", ID_CONTEXTMENU_ABOUTFIREFOXPRELOADER
+        MENUITEM SEPARATOR
+        MENUITEM "&Unload Palemoon Preloader",  ID_CONTEXTMENU_UNLOADFIREFOXPRELOADER
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_OPTIONS_UNABLETOOPEN "Unable to open Palemoon from \r\n"
+    IDS_UNABLETOLOAD_FILE   "Unable to open Palemoon with ""\r\n%1!s!\r\n.""  The Preloader Options dialog will now appear to let you change\r\nthe path where to look for Palemoon."
+    IDS_UNABLETOLOAD_OTHER  "Unable to open Palemoon with ""\r\n%1!s!\r\n."" Do you wish to see the Preloader Options dialog to change\r\nto the path where to look for Palemoon?"
+    IDS_ENDING_MUSTBEVALID  "You must enter a valid path to Palemoon.\r\nSince you did not change an existing path\r\nto Palemoon, the Preloader will now end."
+    IDS_ENDING              "Palemoon Preloader will now end."
+    IDS_WARN_UNLOADPRELOADER 
+                            "Unloading the Palemoon Preloader will\r\nterminate any running Palemoon windows.\r\nAre you sure you want to unload?"
+    IDS_WARN_UNLOAD         "Unloading Palemoon will terminate\r\nany open Palemoon windows.\r\nAre you sure you want to unload Palemoon?"
+    IDS_WARN_RELOAD         "Reloading Palemoon will terminate\r\nany open Palemoon windows.\r\nAre you sure you want to reload Palemoon?"
+    IDS_WARN_TITLE          "Are You Sure?"
+    IDS_ERROR_TITLE         "Palemoon Preloader Error!"
+    IDS_EXISTING_INSTANCE   "The Palemoon Preloader is already running."
+    IDS_NEEDPATH            "The Palemoon Preloader cannot load without\r\nknowing where Palemoon is located.\r\n\r\nPlease start the preloader again and enter the\r\npath to Palemoon."
+    IDS_TRAYTIP             "Palemoon Preloader"
+    IDS_ENTERPATH           "Please enter the path to Palemoon"
+END
+
+#endif    // Neutral resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\PalemoonPreloader.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\PalemoonPreloader.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

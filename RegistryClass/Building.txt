@@ -1,0 +1,40 @@
+===============================================================================
+RegistryClass Build Instructions
+===============================================================================
+
+Requirements
+===============================================================================
+Visual C++ 6.0
+Windows 95 or better
+64BM RAM
+2MB or free Harddrive space
+Microsoft Layer for Unicode on Windows 95/98/Me Systems for UNICODE support
+
+Recommended
+===============================================================================
+Visual C++ Service Pack 6
+Windows 2000 or Better
+256MB RAM
+7MB or free Harddrive space
+The latest Platform SDK
+
+Getting the Latest Source
+===============================================================================
+Visit http://matt.sixxgate.com/forum/viewtopic.php?t=93 to find the latest
+source for RegistryClass.
+
+Setup
+===============================================================================
+Once you have downloaded the RegistryClass_src.zip, simply unzip
+the ZIP files into this folder preserving the paths.
+
+Compile
+===============================================================================
+Just load the RegistryClass Workspace in Visual C++, compile the Release and/or
+Debup settings.  Registry already compiles as both UNICODE and ANSI.
+
+Setup Applications
+===============================================================================
+When creating setup applications for this library, make sure it is configured
+to install the registry class libraries as shared libraries and only overwrites
+older versions.  This will ensure the latest version is always installed.

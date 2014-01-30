@@ -1,0 +1,33 @@
+﻿Build started 14/01/26 23:38:07.
+     1>Project "D:\Downloads\RegistryClass\RegistryClass.vcxproj" on node 2 (Build target(s)).
+     1>CustomBuild:
+         Performing Custom Build Tools
+         Registry.h
+         RegistryClass.h
+         RegistryKey.h
+         RegistryValue.h
+                 4 file(s) copied.
+       PostBuildEvent:
+         CScript autover.js -n NextBuildNumber.txt -o autover.h
+         copy *.pdf .\Release\
+         copy ChangeLog.txt .\Release\
+         copy License.txt .\Release\
+         :VCEnd
+         Microsoft (R) Windows Script Host Version 5.8
+         Copyright (C) Microsoft Corporation. All rights reserved.
+         
+         AutoVer Script version 1.0 revision 10
+         ===============================================================================
+         Input File: NextBuildNumber.txt    Output File: autover.h
+         Currnet Build: 1053
+         New Build:     1054
+         manual.pdf
+         reference.pdf
+                 2 file(s) copied.
+                 1 file(s) copied.
+                 1 file(s) copied.
+     1>Done Building Project "D:\Downloads\RegistryClass\RegistryClass.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.16

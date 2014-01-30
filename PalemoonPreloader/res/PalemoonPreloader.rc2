@@ -1,0 +1,78 @@
+/////////////////////////////////////////////////////////////////////////////
+// Resources Microsoft Visual C++ does not edit directly
+/////////////////////////////////////////////////////////////////////////////
+// Copyright (C)2004 6XGate Incorporated
+//
+// This file is part of Firefox Preloader
+//
+// Firefox Preloader is free software; you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published
+// by the Free Software Foundation; either version 2 of the License, or
+// (at your option) any later version.
+// 
+// Firefox Preloader is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+// 
+// You should have received a copy of the GNU General Public License
+// along with Firefox Preloader; if not, write to the Free Software
+// Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+/////////////////////////////////////////////////////////////////////////////
+
+#ifdef APSTUDIO_INVOKED
+	#error this file is not editable by Microsoft Visual C++
+#endif //APSTUDIO_INVOKED
+
+/////////////////////////////////////////////////////////////////////////////
+// Add manually edited resources here...
+/////////////////////////////////////////////////////////////////////////////
+#include "autover.h"
+
+// CREATEPROCESS_MANIFEST_RESOURCE_ID RT_MANIFEST "manifest.xml"
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,BUILD_NUM,0
+ PRODUCTVERSION 1,0,BUILD_NUM,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x29L
+#else
+ FILEFLAGS 0x28L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "000004b0"
+        BEGIN
+            VALUE "Comments", "This program is licensed under the GNU GPL\0"
+            VALUE "CompanyName", "6XGate Incorporated\0"
+            VALUE "FileDescription", "Loads some parts of Firefox into memory before it is used to improve startup speed.\0"
+            VALUE "FileVersion", "1.0 build " BUILD_STR "\0"
+            VALUE "InternalName", "Firefox Preloader\0"
+            VALUE "LegalCopyright", "Copyright © 2005\0"
+            VALUE "LegalTrademarks", "Mozilla Firefox is a registered trademark of the Mozilla Foundation\0"
+            VALUE "OriginalFilename", "FirefoxPreloader.exe\0"
+            VALUE "PrivateBuild", "Release Canidate 2\0"
+            VALUE "ProductName", "Firefox Preloader\0"
+            VALUE "ProductVersion", "1.0 build " BUILD_STR "\0"
+            VALUE "SpecialBuild", "Release Canidate 2\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0, 1200
+    END
+END
+
+#endif    // !_MAC
+
